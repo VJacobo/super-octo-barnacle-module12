@@ -2,7 +2,6 @@
 // setting up for the database to grab info from the lib/suggestions file.
 const mysql = require("mysql");
 const prompts = require("./lib/prompts");
-const { connect } = require("http2");
 
 // creating the mysql connection to localhost/3305.
 const connection = mysql.createConnection({
