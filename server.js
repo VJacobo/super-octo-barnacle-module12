@@ -1,6 +1,9 @@
+// creating variable for the port
 const http = require('http');
 const port = 3305;
 
+// allowing an interaction to the prompts.js.
+// the interactions are view, add, and update.
 const dbInteraction = require('./lib/prompts');
 
 const server = http.createServer((req, res) => {
@@ -10,14 +13,15 @@ const server = http.createServer((req, res) => {
     } else if (req.url === '/add') {
         dbInteraction.addWhat();
         res.end('Adding Data to database');
-    } else if (req.url === './update') {
+    } else if (req.url === '/update') {
         dbInteraction.updateWhat();
-        res.end('Updating data to the database') {
-        } else {
-            res.end('Invalid Request');
+        res.end('Updating data on database');
+    } else {
+        res.end('Invalid Request');
     }
 });
 
+// allows file to listen to the port
 server.listening(port, () => {
     console.log('Server is runnning on port ${port}');
 });
