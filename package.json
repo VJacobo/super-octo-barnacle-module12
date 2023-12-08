@@ -2,5 +2,9 @@
   "name": "super-octo-barnacle-module12",
   "lockfileVersion": 3,
   "requires": true,
-  "packages": {}
+  "packages": {},
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "mysql": "^2.18.1"
+  }
 }

@@ -1,10 +1,10 @@
 // creating variable for the port
-const employee_tracker = require('.//Users/victoriajacobo/Bootcamp/super-octo-barnacle-module12/server.js');
+const employee_tracker = require('./server.js');
 const port = 3305;
 
 // allowing an interaction to the prompts.js.
 // the interactions are view, add, and update.
-const dbInteraction = require('./lib/Users/victoriajacobo/Bootcamp/super-octo-barnacle-module12/lib/prompts.jsprompts');
+const dbInteraction = require('./lib/prompts');
 
 // TUTORING QUESTION: 
 const server = http.createServer((req, res) => {
