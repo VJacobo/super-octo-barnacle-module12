@@ -4,7 +4,7 @@
   "requires": true,
   "packages": {},
   "dependencies": {
-    "inquirer": "^9.2.12",
-    "mysql": "^2.18.1"
+    "inquirer": "^8.2.6",
+    "mysql2": "^3.7.1"
   }
 }

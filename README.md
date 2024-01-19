@@ -23,3 +23,10 @@ https://www.youtube.com/watch?v=Cz3WcZLRaWc
 
 #### LICENSE
 MIT License
+
+## TODO
+inquirer.prompt to receive additional information that is required 
+
+ createDepartment(department) {
+    db.query("INSERT INTO department SET ?", department);
+  }
